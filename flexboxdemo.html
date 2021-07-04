@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FlexBox</title>
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .col-1 {
+        background: #D7E8D4;
+        flex: 1;
+    }
+
+    .col-2 {
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+        font-family: monospace;
+        padding: 20px;
+        font-weight: 100;
+
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content>article {
+        flex: 4;
+        min-height: 60vh;
+    }
+
+    header,
+    footer {
+        background: yellowgreen;
+        height: 20vh;
+        padding: 2em;
+        font-family: sans-serif;
+        font-size: 20px;
+        align-content: space-between;
+    }
+
+    article,
+    nav {
+        padding: 1em;
+    }
+</style>
+
+<body>
+    <nav class="col-1">
+        <ul class="nav_list">
+            <li><a href="#header">What is Header?</a></li>
+            <li><a href="#article">What is Article?</a></li>
+            <li><a href="#footer">What is Footer?</a></li>
+            <li><a href="#navigation">What is Navigation?</a></li>
+        </ul>
+    </nav>
+    <div class="col-2">
+        <header>Articles</header>
+        <main class="content">
+            
+                <article id="header">
+                    <h2>Header</h2>
+                    <p>The header HTML element represents introductory content, typically a group of introductory or
+                        navigational aids.
+                        It may contain some heading elements but also a logo, a search form, an author name, and other
+                        elements.</p>
+                    <h4>Usage</h4>
+                    <p>The header element is not sectioning content and therefore does not introduce a new section in
+                        the outline. That said, a header
+                        element is intended to usually contain the surrounding section's heading (an h1–h6 element), but
+                        this is not required.</p>
+                </article>
+            <article id="article">
+                <h2>Aritcle</h2>
+                <p>The article HTML element represents a self-contained composition in a document, page, application, or
+                    site,
+                    which is intended to be independently distributable or reusable (e.g., in syndication). '
+                    Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a
+                    user-submitted comment,
+                    an interactive widget or gadget, or any other independent item of content.
+                </p>
+            </article>
+
+            <article id="footer">
+                <h2>Footer</h2>
+                <p>The footer HTML element represents a footer for its nearest sectioning content or sectioning root
+                    element.
+                    A footer typically contains information about the author of the section, copyright data or links to
+                    related documents.</p>
+            </article>
+
+            <article id="navigation">
+                <h2>Navigation</h2>
+                <p>The nav HTML element represents a section of a page whose purpose is to provide navigation links,
+                    either within
+                    the current document or to other documents. Common examples of navigation sections are menus, tables
+                    of contents,
+                    and indexes.</p>
+            </article>
+        </main>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
